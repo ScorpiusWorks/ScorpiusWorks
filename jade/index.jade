@@ -1,0 +1,595 @@
+//output:index.html
+doctype html
+html(lang='ro')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='Cel mai nou atelier Web, Graphic &amp; Marketing din Arad')
+    meta(name='author', content='Marius Porcolean - Scorpius Works')
+    link(rel='apple-touch-icon', sizes='180x180', href='/ico/apple-touch-icon.png')
+    link(rel='icon', type='image/png', href='/ico/favicon-32x32.png', sizes='32x32')
+    link(rel='icon', type='image/png', href='/ico/favicon-16x16.png', sizes='16x16')
+    link(rel='manifest', href='/manifest.json')
+    link(rel='mask-icon', href='/ico/safari-pinned-tab.svg')
+    meta(name='apple-mobile-web-app-title', content='Scorpius Works')
+    meta(name='application-name', content='Scorpius Works')
+    meta(name='theme-color', content='#313131')
+    title Scorpius Works - Creative Workshop
+    // Bootstrap Core CSS
+    link(href='vendor/bootstrap/css/bootstrap.css', rel='stylesheet')
+    // Custom Fonts
+    link(href='vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    // <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+    // Theme CSS
+    link(href='css/agency.css', rel='stylesheet')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-65392990-2', 'auto');
+      ga('send', 'pageview');
+    script(src='https://www.google.com/recaptcha/api.js')
+  body#page-top.index
+    // Navigation
+    nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header.page-scroll
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            |  Meniu
+            i.fa.fa-bars
+          a#logo-scorpius.navbar-left(href='#page-top')
+            img(src='img/logo-scorpius-cyan.png', alt='Logo Scorpius Works')
+          a.navbar-brand.page-scroll(href='#page-top') Scorpius Works
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.hidden
+              a(href='#page-top')
+            li
+              a.page-scroll(href='#services') Servicii
+            li
+              a.page-scroll(href='#portfolio') Portofoliu
+            li
+              a.page-scroll(href='#about') Trivia
+            li
+              a.page-scroll(href='#team') Echipa
+            li
+              a.page-scroll(href='#parteneri') Parteneri
+            li
+              a.page-scroll(href='#contact') Contact
+        // /.navbar-collapse
+      // /.container-fluid
+    // Header
+    header
+      .container
+        .intro-text
+          .intro-lead-in Bine ai venit!
+          .intro-heading Ne bucurăm să te avem aici
+          a.page-scroll.btn.btn-xl(href='#services') Citește mai multe
+    // Services Section
+    section#services
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading Servicii
+            h3.section-subheading.text-muted.col-md-8.col-md-offset-2
+              | Ai nevoie de ajutor în legătură cu site-ul tău sau vrei să lansezi un nou produs și nu știi cum să-l promovezi cât mai eficient?
+              br
+              br
+              | Suntem aici pentru tine!
+        .row.text-center
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-laptop.fa-stack-1x.fa-inverse
+            h4.service-heading Responsive Web Design
+            p.text-muted
+              | Ai nevoie de un website pentru a-ți dezvolta afacerea și în mediul online?
+              br
+              |                     Site-ul tău este învechit și nu mai face față provocărilor moderne sau nu este optimizat pentru dispozitive mobile?
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-picture-o.fa-stack-1x.fa-inverse
+            h4.service-heading Design Grafic
+            p.text-muted
+              | Ai nevoie de un flyer pentru a impulsiona vânzările celui mai nou produs?
+              br
+              |                     Ai nevoie de o machetă pentru noua locație outdoor pe care ai ales-o pentru a-ți promova afacerea?
+              br
+              |                     Vrei să faci o postare interesantă pe pagina de Facebook a afacerii tale dar nu ai o machetă personalizată?
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-suitcase.fa-stack-1x.fa-inverse
+            h4.service-heading Consultanță Marketing
+            p.text-muted
+              | Vrei să lansezi o afacere nouă sau un produs nou și nu știi cum să ajungi cât mai eficient la clienții tăi?
+              br
+              |                     Vrei sa îți extinzi afacerea și să fii mai aproape de clienții tăi pe platformele de socializare, dar nu ești familiarizat cu acestea?
+        br
+        br
+        .col-lg-12.text-center
+          h3.section-heading Cu toate acestea, te putem ajuta noi!
+          br
+          a.page-scroll.btn.btn-xl(href='#contact') Scrie-ne!
+    // Portfolio Grid Section
+    section#portfolio.bg-light-gray
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading Portofoliu
+            h3.section-subheading.text-muted Vă invităm mai jos să vedeți o parte din lucrările în care ne-am implicat:
+        .row
+          .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link(href='#portfolioModal1', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/portfolio/flyer-arena-preview.jpg', alt='')
+            .portfolio-caption
+              h4 Flyer Arena Gym
+              p.text-muted Design Grafic
+          .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link(href='#portfolioModal2', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/portfolio/web-bgdevelopment-preview.jpg', alt='')
+            .portfolio-caption
+              h4 BG Develpment
+              p.text-muted Web Design
+          .clearfix.visible-sm
+          .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link(href='#portfolioModal3', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/portfolio/flyer-medieval-preview.jpg', alt='')
+            .portfolio-caption
+              h4 Flyer Medieval Langoș
+              p.text-muted Design Grafic
+          .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link(href='#portfolioModal4', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/portfolio/web-maduro-preview.jpg', alt='')
+            .portfolio-caption
+              h4 Maduro Cigars Club
+              p.text-muted Web Design
+          .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link(href='#portfolioModal5', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/portfolio/poster-medieval-preview.jpg', alt='')
+            .portfolio-caption
+              h4 Poster produs - Medieval
+              p.text-muted Design Grafic
+          .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link(href='#portfolioModal6', data-toggle='modal')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-responsive(src='img/portfolio/cdv-scorpius-preview.jpg', alt='')
+            .portfolio-caption
+              h4 Cărți de vizită
+              p.text-muted Design Grafic
+        .row
+          .col-12-lg.text-center
+            br
+            br
+            a.page-scroll.btn.btn-xl(href='#contact') CERE OFERTĂ!
+    // About Section
+    section#about
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading Despre noi
+            h3.section-subheading.text-muted Câteva cuvinte despre povestea din spatele Scorpius Works.
+        .row
+          .col-lg-12
+            ul.timeline
+              li
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/about/1.jpg', alt='')
+                .timeline-panel
+                  .timeline-heading
+                    h4 1996
+                    h4.subheading Primul contact cu IT-ul
+                  .timeline-body
+                    p.text-muted
+                      | În anul 1996, Marius, fondatorul Scorpius Works, elev în școala primară pe vremea aceea, ia primul contact cu lumea IT, printr-un Pentium 1, de 166 MHz, iar fascinația generată de "cutia ciudată" nu a încetat nici după mai bine de 20 de ani :)
+              li.timeline-inverted
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/about/2.jpg', alt='')
+                .timeline-panel
+                  .timeline-heading
+                    h4 2015
+                    h4.subheading Primii pași către business în IT
+                  .timeline-body
+                    p.text-muted
+                      | După ani de zile de experiență profesională acumulată în alte domenii, în anul 2015, Marius, deja sătul de munca monotonă din biroul confortabil de Sales Manager într-un showroom al unui brand de renume în domeniul auto, hotărăște că a sosit momentul pentru a se axa pe pasiunea sa dintotdeauna, exersată până atunci doar ca hobby și începe cu un website și câteva proiecte grafice
+              li
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/about/3.jpg', alt='')
+                .timeline-panel
+                  .timeline-heading
+                    h4 Martie 2016
+                    h4.subheading Înființarea firmei
+                  .timeline-body
+                    p.text-muted
+                      | Pentru a practica totul cu "acte în regulă", ia ființă firma Scorpius Works SRL-D, cu scopul de a livra servicii de cea mai bună calitate pe nișele de Web Design, Design Grafic și Consultanță Marketing
+              li.timeline-inverted
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/about/4.jpg', alt='')
+                .timeline-panel
+                  .timeline-heading
+                    h4 Iulie 2016
+                    h4.subheading Tranziția către full-time IT
+                  .timeline-body
+                    p.text-muted
+                      | Întrucât piața arăta că există o cerere destul de mare pe aceste domenii, Marius ia decizia să renunțe definitiv la job pentru a se ocupa full time de activitatea Scorpius Works. Cu această ocazie apar și câteva noi proiecte, pe care le veți vedea cu siguranță cât de curând adăugate la portofoliu.
+              li.timeline-inverted
+                .timeline-image
+                  a#parte-din-echipa.page-scroll(href='#contact')
+                    h4
+                      | Fă parte
+                      br
+                      | și tu din
+                      br
+                      | poveste!
+    // Team Section
+    section#team.bg-light-gray
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading Echipa noastră grozavă :)
+            h3.section-subheading.text-muted Momentan formată dintr-un singur membru permanent și foarte mulți prieteni
+        .row
+          .col-sm-4.col-sm-push-4
+            .team-member
+              img.img-responsive.img-circle(src='img/team/marius.jpg', alt='Marius Porcolean - Owner &amp; Founder')
+              h4 Marius Porcolean
+              p.text-muted Owner &amp; Founder
+              ul.list-inline.social-buttons
+                li
+                  a(href='https://www.instagram.com/mariuselix/', target='_blank')
+                    i.fa.fa-instagram
+                li
+                  a(href='https://www.facebook.com/mariuselix', target='_blank')
+                    i.fa.fa-facebook
+                li
+                  a(href='https://www.linkedin.com/in/mariuselix', target='_blank')
+                    i.fa.fa-linkedin
+        .row
+          .col-md-6.col-md-offset-3.text-center
+            p.large.text-muted
+              | Dacă și tu ești un tânăr pasionat de Web, Grafică sau crezi că ai calități fantastice de comunicare, nu ezita să ne scrii și poate vom deveni colegi!
+    // Clients Aside
+    aside#parteneri.clients
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading Parteneri
+            h3.section-subheading.text-muted O parte din partenerii cu care am avut plăcerea de a colabora
+          .col-md-3.col-sm-6
+            a(href='https://www.facebook.com/DRW.Arad.1994', target='_blank')
+              img.img-responsive.img-centered(src='img/logos/DRW-Arad.jpg', alt='Logo colaborator - DRW Arad')
+          .col-md-3.col-sm-6
+            a(href='http://www.bgdevelopment.ro', target='_blank')
+              img.img-responsive.img-centered(src='img/logos/BGD.jpg', alt='Logo colaborator - BG Development')
+          .col-md-3.col-sm-6
+            a(href='http://www.oesb-international.com', target='_blank')
+              img.img-responsive.img-centered(src='img/logos/OESB-international.jpg', alt='Logo colaborator - OESB International')
+          .col-md-3.col-sm-6
+            a(href='http://www.madurocigarsclub.ro', target='_blank')
+              img.img-responsive.img-centered(src='img/logos/maduro-cigars-club-small.jpg', alt='Logo colaborator - Maduro Cigars Club')
+          .col-md-3.col-sm-6
+            a(href='https://www.facebook.com/medieval.langos.ro', target='_blank')
+              img.img-responsive.img-centered(src='img/logos/medieval.jpg', alt='Logo colaborator - Medieval Langos')
+          .col-md-3.col-sm-6
+            a(href='https://www.facebook.com/arenagymarad', target='_blank')
+              img.img-responsive.img-centered(src='img/logos/arena-gym.jpg', alt='Logo colaborator - Arena Gym')
+          .col-md-3.col-sm-6
+            a(href='https://www.facebook.com/CAR.CFR.Arad/', target='_blank')
+              img.img-responsive.img-centered(src='img/logos/CAR-CFR-Arad.jpg', alt='Logo colaborator - CAR CFR Arad')
+          .col-md-3.col-sm-6
+            a(href='#', target='_blank')
+              img.img-responsive.img-centered(src='img/logos/steimers-ziegellack.jpg', alt="Logo colaborator - Steimer's Ziegellack")
+    // Contact Section
+    section#contact
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading Scrie-ne!
+            h3.section-subheading.text-muted(style='color:white;') Și hai să găsim împreună soluțiile cele mai potrivite pentru afacerea ta
+        .row
+          .col-lg-12
+            form#contactForm(name='sentMessage', novalidate='')
+              .row
+                .col-md-6
+                  .form-group
+                    input#name.form-control(type='text', placeholder='Numele tău *', required='', data-validation-required-message='Tă rugăm să îți introduci numele.')
+                    p.help-block.text-danger
+                  .form-group
+                    input#email.form-control(type='email', placeholder='E-mail *', required='', data-validation-required-message='Te rugăm să introduci o adresă de e-mail validă.')
+                    p.help-block.text-danger
+                  .form-group
+                    input#phone.form-control(type='tel', placeholder='Telefon *', required='', data-validation-required-message='Te rugăm să introduci un număr de telefon valid.')
+                    p.help-block.text-danger
+                .col-md-6
+                  .form-group
+                    textarea#message.form-control(placeholder='Measjul tău *', required='', data-validation-required-message='Te rugăm să introduci un mesaj.')
+                    p.help-block.text-danger
+                //
+                  <div class="clearfix"></div>
+                  <div class="col-sm-4 col-md-offset-4 g-recaptcha" data-sitekey="6LeauwcUAAAAALryjXRQ-JTw0NiNtgd-n2w_lrNa">
+                  </div>
+              .clearfix(style='margin:10px')
+              .row
+                .col-lg-12.text-center
+                  #success
+                  button.btn.btn-xl(type='submit') Trimite
+    footer
+      .container
+        .row
+          .col-md-4
+            span.copyright Copyright © Scorpius Works 2016
+          .col-md-4
+            ul.list-inline.social-buttons
+              li
+                a(href='https://www.twitter.com/ScorpiusWorks', target='_blank')
+                  i.fa.fa-twitter
+              li
+                a(href='https://www.facebook.com/scorpiusworks/', target='_blank')
+                  i.fa.fa-facebook
+              li
+                a(href='https://www.linkedin.com/company/scorpius-works', target='_blank')
+                  i.fa.fa-linkedin
+          .col-md-4
+            ul.list-inline.quicklinks
+              li Built using
+                a(href='http://getbootstrap.com/') Bootstrap
+                
+    // Portfolio Modals
+    // Use the modals below to showcase details about your portfolio projects!
+    // Portfolio Modal 1
+    #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                // Project Details Go Here
+                h2 Flyer Arena Gym
+                p.item-intro.text-muted Un flyer interesant pentru o nouă sală de fitness din oraș.
+                img.img-responsive.img-centered(src='img/portfolio/flyer-arena.jpg', alt='Flyer Arena Gym')
+                p 
+                  strong Arena Gym
+                  | este cea mai nouă sală de fitness și wellness din Arad ne-a lansat o provocare pentru campania sa de lansare: un flyer interesant, care să convingă potențialii clienți că Arena Gym este soluția potrivită. Noi considerăm că am făcut o treabă bună! Tu ce părere ai?
+                p
+                  strong Îți dorești și tu un flyer profesionist pentru promovarea afacerii tale?
+                  br
+                  a(href='http://scorpiusworks.com/#contact', target='_blank')
+                    strong Contactează-ne acum!
+                ul.list-inline
+                  li
+                    strong Data:
+                    |  Iulie 2016
+                  li
+                    strong Client:
+                    |  Arena Gym
+                  li
+                    strong Categorie:
+                    |  Design Grafic
+                button.btn.btn-primary(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Închide
+    // Portfolio Modal 4
+    #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                h2 Maduro Cigars Club
+                p.item-intro.text-muted Un website simplu, curat și cu bun gust.
+                img.img-responsive.img-centered(src='img/portfolio/web-maduro.jpg', alt='Website Maduro Cigars Club')
+                p
+                  a(href='http://www.madurocigarsclub.ro', target='_blank')
+                    strong Maduro Cigars Club
+                  |  este website-ul clubului fumătorilor de trabucuri din Arad, unul simplu și curat, creat conform celor mai noi standarde HTML5, CSS3, JavaScript și puțin PHP pentru formularul de contact.
+                p
+                  strong
+                    | Îți dorești și tu un website profesionist pentru promovarea afacerii tale în mediul online?
+                  br
+                  a(href='http://scorpiusworks.com/#contact', target='_blank')
+                    strong Contactează-ne acum!
+                ul.list-inline
+                  li
+                    strong Data:
+                    |  Mai 2015
+                  li
+                    strong Client:
+                    |  Maduro Cigars Club
+                  li
+                    strong Categorie:
+                    |  Web Design
+                button.btn.btn-primary(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Închide
+    // Portfolio Modal 3
+    #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                // Project Details Go Here
+                h2 Flyer Medieval Langoș
+                p.item-intro.text-muted Un flyer pentru un business nou, cu o idee inedită.
+                img.img-responsive.img-centered(src='img/portfolio/flyer-medieval.jpg', alt='Flyer Medieval Langoș')
+                p
+                  a(href='https://www.facebook.com/medieval.langos.ro', target='_blank')
+                    strong Medieval Langoș
+                  |  este un concept inovativ de "street food", bazat pe un produs tradițional: langoșul! Noi am conceput un flyer interesant, în temă cu numele business-ului (Medieval) pentru promovarea acestuia în diverse zone din oraș.
+                p
+                  strong Îți dorești și tu un flyer profesionist pentru promovarea afacerii tale?
+                  br
+                  a(href='http://scorpiusworks.com/#contact', target='_blank')
+                    strong Contactează-ne acum!
+                ul.list-inline
+                  li
+                    strong Data:
+                    |  Iunie 2015
+                  li
+                    strong Client:
+                    |  Medieval Langoș
+                  li
+                    strong Categorie:
+                    |  Design Grafic
+                button.btn.btn-primary(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Închide
+    // Portfolio Modal 2
+    #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                // Project Details Go Here
+                h2 BG Development
+                p.item-intro.text-muted Website pentru o companie de distribuție B2B de produse de curățenie.
+                img.img-responsive.img-centered(src='img/portfolio/web-bgdevelopment.jpg', alt='Career Coach Website')
+                p
+                  a(href='http://www.bgdevelopment.ro', target='_blank')
+                    strong BG Development
+                  |  este o companie cu sediul în Arad, ce își desfășoară activitatea la nivelul a 4 județe din vestul țării (Arad, Timiș, Bihor și Hunedoara) în domeniul distribuției business-to-business de produse profesionale de curățenie, consumabile, produse pentru catering, saci menajeri, alimentari sau saci speciali pentru deșeuri biologice și alte produse conexe.
+                p
+                  strong
+                    | Îți dorești și tu un website profesionist pentru promovarea afacerii tale în mediul online?
+                  br
+                  a(href='http://scorpiusworks.com/#contact', target='_blank')
+                    strong Contactează-ne acum!
+                ul.list-inline
+                  li
+                    strong Data:
+                    |  Noiembrie 2016
+                  li
+                    strong Client:
+                    |  BG Development
+                  li
+                    strong Categorie:
+                    |  Web Design
+                button.btn.btn-primary(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Închide
+    // Portfolio Modal 5
+    #portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                // Project Details Go Here
+                h2 Poster Medieval Langoș
+                p.item-intro.text-muted Un poster de produs pentru un business nou, cu o idee inedită.
+                img.img-responsive.img-centered(src='img/portfolio/poster-medieval.jpg', alt='Poster Medieval Langoș')
+                p
+                  a(href='https://www.facebook.com/medieval.langos.ro', target='_blank')
+                    strong Medieval Langoș
+                  |  este un concept inovativ de "street food", bazat pe un produs tradițional: langoșul! Noi am conceput o serie de postere de produs interesante, în temă cu numele business-ului (Medieval) pentru a ajuta clienții să se hotărască mai ușor.
+                p
+                  strong Îți dorești și tu postere profesioniste pentru promovarea produselor tale tale?
+                  br
+                  a(href='http://scorpiusworks.com/#contact', target='_blank')
+                    strong Contactează-ne acum!
+                ul.list-inline
+                  li
+                    strong Data:
+                    |  Iunie 2015
+                  li
+                    strong Client:
+                    |  Medieval Langoș
+                  li
+                    strong Categorie:
+                    |  Design Grafic
+                button.btn.btn-primary(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Închide
+    // Portfolio Modal 6
+    #portfolioModal6.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-content
+        .close-modal(data-dismiss='modal')
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                // Project Details Go Here
+                h2 Cărți de vizită
+                p.item-intro.text-muted Un model de cărți de vizită mai non-conformist.
+                img.img-responsive.img-centered(src='img/portfolio/cdv-scorpius.jpg', alt='')
+                p
+                  | Am creat acest model de cărți de vizită mai non-conformist pentru un nou business in domeniul Web/Design/Marketing, care își propune să se dezvolte pe piața din zona vest a țării pe acest domeniu, NOI!   :)
+                p
+                  strong
+                    | Îți dorești și tu cărți de vizită profesioniste pentru o impresie de top atunci când le înmânezi colaboratorilor?
+                  br
+                  a(href='http://scorpiusworks.com/#contact', target='_blank')
+                    strong Contactează-ne acum!
+                ul.list-inline
+                  li
+                    strong Data:
+                    |  Mai 2016
+                  li
+                    strong Client:
+                    |  Scorpius Works
+                  li
+                    strong Categorie:
+                    |  Design Grafic
+                button.btn.btn-primary(type='button', data-dismiss='modal')
+                  i.fa.fa-times
+                  |  Închide
+    // jQuery
+    script(src='vendor/jquery/jquery.min.js')
+    // Bootstrap Core JavaScript
+    script(src='vendor/bootstrap/js/bootstrap.min.js')
+    // Plugin JavaScript
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')
+    // Contact Form JavaScript
+    script(src='js/jqBootstrapValidation.js')
+    script(src='js/contact_me.js')
+    // Theme JavaScript
+    script(src='js/agency.js')
