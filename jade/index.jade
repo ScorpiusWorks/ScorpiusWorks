@@ -1,4 +1,4 @@
-//output:index.html
+//output: ../index.html
 doctype html
 html(lang='ro')
   head
@@ -17,7 +17,7 @@ html(lang='ro')
     meta(name='theme-color', content='#313131')
     title Scorpius Works - Creative Workshop
     // Bootstrap Core CSS
-    link(href='vendor/bootstrap/css/bootstrap.css', rel='stylesheet')
+    link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
     // Custom Fonts
     link(href='vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
@@ -25,7 +25,7 @@ html(lang='ro')
     link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
     // Theme CSS
-    link(href='css/agency.css', rel='stylesheet')
+    link(href='css/style.min.css', rel='stylesheet')
     // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
     // WARNING: Respond.js doesn't work if you view the page via file://
     //if lt IE 9
@@ -36,11 +36,12 @@ html(lang='ro')
         // Brand and toggle get grouped for better mobile display
         .navbar-header.page-scroll
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
-            span.sr-only Toggle navigation
-            |  Meniu
+            span.sr-only Nav toggle
+            | Meniu 
             i.fa.fa-bars
-          a#logo-scorpius.navbar-left(href='#page-top')
-            img(src='img/logo-scorpius-cyan.png', alt='Logo Scorpius Works')
+          a#logo-scorpius.navbar-left.page-scroll(href='#page-top')
+            div
+              img(src='img/logo-scorpius-cyan.png', alt='Logo Scorpius Works')
           a.navbar-brand.page-scroll(href='#page-top') Scorpius Works
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
@@ -88,7 +89,7 @@ html(lang='ro')
             p.text-muted
               | Ai nevoie de un website pentru a-ți dezvolta afacerea și în mediul online?
               br
-              |                     Site-ul tău este învechit și nu mai face față provocărilor moderne sau nu este optimizat pentru dispozitive mobile?
+              | Site-ul tău este învechit și nu mai face față provocărilor moderne sau nu este optimizat pentru dispozitive mobile?
           .col-md-4
             span.fa-stack.fa-4x
               i.fa.fa-circle.fa-stack-2x.text-primary
@@ -97,9 +98,9 @@ html(lang='ro')
             p.text-muted
               | Ai nevoie de un flyer pentru a impulsiona vânzările celui mai nou produs?
               br
-              |                     Ai nevoie de o machetă pentru noua locație outdoor pe care ai ales-o pentru a-ți promova afacerea?
+              | Ai nevoie de o machetă pentru noua locație outdoor pe care ai ales-o pentru a-ți promova afacerea?
               br
-              |                     Vrei să faci o postare interesantă pe pagina de Facebook a afacerii tale dar nu ai o machetă personalizată?
+              | Vrei să faci o postare interesantă pe pagina de Facebook a afacerii tale dar nu ai o machetă personalizată?
           .col-md-4
             span.fa-stack.fa-4x
               i.fa.fa-circle.fa-stack-2x.text-primary
@@ -108,7 +109,7 @@ html(lang='ro')
             p.text-muted
               | Vrei să lansezi o afacere nouă sau un produs nou și nu știi cum să ajungi cât mai eficient la clienții tăi?
               br
-              |                     Vrei sa îți extinzi afacerea și să fii mai aproape de clienții tăi pe platformele de socializare, dar nu ești familiarizat cu acestea?
+              | Vrei sa îți extinzi afacerea și să fii mai aproape de clienții tăi pe platformele de socializare, dar nu ești familiarizat cu acestea?
         br
         br
         .col-lg-12.text-center
@@ -352,9 +353,7 @@ html(lang='ro')
                   i.fa.fa-linkedin
           .col-md-4
             ul.list-inline.quicklinks
-              li Built using
-                a(href='http://getbootstrap.com/') Bootstrap
-                
+              li: #[span Built using] #[a(href='http://getbootstrap.com/') Bootstrap]
     // Portfolio Modals
     // Use the modals below to showcase details about your portfolio projects!
     // Portfolio Modal 1

@@ -202,14 +202,12 @@ fieldset[disabled] .btn-xl.active {
     background-color: transparent;
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
     transition: padding 0.3s;
     border: none;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;
     -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
   .navbar-custom .navbar-nav > .active > a {
@@ -230,8 +228,6 @@ header {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   text-align: center;
@@ -243,7 +239,7 @@ header {
 header .intro-text {
 /*
   padding-top: 100px;
-  padding-bottom: 50px; 
+  padding-bottom: 50px;
 */
   position: absolute;
   top: 50%;
@@ -292,7 +288,7 @@ header .intro-text .intro-heading {
 
 @media (min-width: 1100px) {
     header .intro-text {
-        width: 60%;
+        width: 50%;
     }
 }
 
@@ -489,7 +485,7 @@ aside h3.section-subheading {
 }
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
-  
+
 }
 .timeline .timeline-body > p,
 .timeline .timeline-body > ul {
@@ -671,7 +667,6 @@ ul.social-buttons li a {
   color: white;
   outline: none;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 ul.social-buttons li a:hover,
@@ -693,7 +688,6 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
-  -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
   min-height: 100%;
@@ -767,6 +761,9 @@ ul.social-buttons li a:active {
   text-shadow: none;
   background: #36c2f2;
 }
+img::-moz-selection {
+  background: transparent;
+}
 img::selection {
   background: transparent;
 }
@@ -786,5 +783,6 @@ body {
 }
 #parte-din-echipa {
   color:white;
-  text-decoration-color: white;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
 }
