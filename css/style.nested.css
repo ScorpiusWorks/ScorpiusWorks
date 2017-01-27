@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: -3px; }
       .navbar-custom #logo-scorpius:hover {
         transition: all 1s ease-in-out;
-        transform: scale(0.8) rotateZ(360deg); }
+        transform: scale(1.2) rotateZ(360deg); }
     .navbar-custom .navbar-brand {
       margin-top: -3px;
       font-size: 2em;
