@@ -1,0 +1,82 @@
+
+mixin nav-menu (id, name)
+  li
+    a.page-scroll(href=id) #{name}
+    
+mixin portfolio (modlink, imglnk, hdg, desc)
+  .col-md-4.col-sm-6.portfolio-item
+    a.portfolio-link(href=modlink data-toggle='modal')
+      .portfolio-hover
+        .portfolio-hover-content
+          i.fa.fa-search-plus.fa-3x
+      img.img-responsive(src=imglnk, alt='')
+    .portfolio-caption
+      h4 #{hdg}
+      p.text-muted #{desc}
+      
+mixin social(link, type)
+  li
+    a(href=link, target='_blank')
+      i(class='fa fa-' + type)
+
+mixin partner(link, imgsrc, imgalt)
+  .col-md-3.col-sm-6
+    a(href=link, target='_blank')
+      img.img-responsive.img-centered(src=imgsrc, alt=imgalt)
+      
+mixin serviciu(icon, title, desc1, desc2)
+  .col-md-4
+    span.fa-stack.fa-4x
+      i.fa.fa-circle.fa-stack-2x.text-primary
+      i(class='fa fa-stack-1x fa-inverse fa-' +icon)
+    h4.service-heading #{title}
+    p.text-muted #{desc1}
+    p.text-muted #{desc2}
+    
+mixin modal(nr, title, shdesc, imgsrc, clienturl, client, desc, cta, date, categ)
+  div(id='portfolioModal' +nr , class= 'portfolio-modal modal fade', tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-content
+      .close-modal(data-dismiss='modal')
+        .lr
+          .rl
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            .modal-body
+              // Project Details Go Here
+              h2 #{title}
+              p.item-intro.text-muted #{shdesc}
+              img.img-responsive.img-centered(src=imgsrc, alt=title)
+              p
+                a(href=clienturl, target='_blank')
+                  strong #{client}
+                |  #{desc}
+              p
+                strong #{cta}
+                br
+                a(href='http://scorpiusworks.com/#contact', target='_blank')
+                  strong Contactează-ne acum!
+              ul.list-inline
+                li
+                  strong Data:
+                  |  #{date}
+                li
+                  strong Client:
+                  |  #{client}
+                li
+                  strong Categorie:
+                  |  #{categ}
+              button.btn.btn-primary(type='button', data-dismiss='modal')
+                i.fa.fa-times
+                |  Închide
+
+mixin time(imgsrc, year, title, desc)
+  .timeline-image
+    img.img-circle.img-responsive(src=imgsrc, alt='')
+  .timeline-panel
+    .timeline-heading
+      h4 #{year}
+      h4.subheading #{title}
+    .timeline-body
+      p.text-muted
+        | #{desc}

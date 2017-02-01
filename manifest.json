@@ -1,15 +1,17 @@
 {
 	"name": "Scorpius Works",
+	"short_name": "Scorpius",
+	"start_url": "/index.html",
 	"icons": [
 		{
-			"src": "\/ico/android-chrome-192x192.png",
+			"src": "/ico/android-chrome-192x192.png",
 			"sizes": "192x192",
-			"type": "image\/png"
+			"type": "image/png"
 		},
 		{
-			"src": "\/ico/android-chrome-512x512.png",
+			"src": "/ico/android-chrome-512x512.png",
 			"sizes": "512x512",
-			"type": "image\/png"
+			"type": "image/png"
 		}
 	],
 	"theme_color": "#313131"

@@ -1,0 +1,52 @@
+section#contact
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading Scrie-ne!
+        h3.section-subheading.text-muted(style='color:white;') Și hai să găsim împreună soluțiile cele mai potrivite pentru afacerea ta
+    .row
+      .col-lg-12
+        form#contactForm(name='sentMessage', novalidate='')
+          .row
+            .col-md-6
+              .form-group
+                input#name.form-control(
+                  type='text'
+                  placeholder='Numele tău *'
+                  required=''
+                  data-validation-required-message='Tă rugăm să îți introduci numele.'
+                )
+                p.help-block.text-danger
+              .form-group
+                input#email.form-control(
+                  type='email'
+                  placeholder='E-mail *'
+                  required=''
+                  data-validation-required-message='Te rugăm să introduci o adresă de e-mail validă.'
+                )
+                p.help-block.text-danger
+              .form-group
+                input#phone.form-control(
+                  type='tel'
+                  placeholder='Telefon *'
+                  required=''
+                  data-validation-required-message='Te rugăm să introduci un număr de telefon valid.'
+                )
+                p.help-block.text-danger
+            .col-md-6
+              .form-group
+                textarea#message.form-control(
+                  placeholder='Measjul tău *'
+                  required=''
+                  data-validation-required-message='Te rugăm să introduci un mesaj.'
+                )
+                p.help-block.text-danger
+            //
+              <div class="clearfix"></div>
+              <div class="col-sm-4 col-md-offset-4 g-recaptcha" data-sitekey="6LeauwcUAAAAALryjXRQ-JTw0NiNtgd-n2w_lrNa">
+              </div>
+          .clearfix(style='margin:10px')
+          .row
+            .col-lg-12.text-center
+              #success
+              button.btn.btn-xl(type='submit') Trimite
