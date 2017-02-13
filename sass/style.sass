@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6
       font-size: 1.5em
 
 header
-  background-image: url("../img/computer-desk-o70.jpg")
+  background-image: url("../img/office-table-o40.jpg")
   background-repeat: no-repeat
   background-attachment: scroll
   background-position: center center
@@ -277,10 +277,10 @@ section
 
 // Services Section
 
-#services
-  .fa-stack
-    &:hover,
-    &:active
+.one-service
+  &:hover,
+  &:active
+    .fa-stack
       transition: all 1s ease-in-out
       transform: rotateY(360deg)
 
@@ -677,7 +677,9 @@ ul.social-buttons
 .btn:active:focus
   outline: none
 
+// Modals
 .portfolio-modal
+
   .modal-dialog
     margin: 0
     height: 100%
@@ -692,6 +694,10 @@ ul.social-buttons
     min-height: 100%
     padding: 100px 0
     text-align: center
+    background-color: rgba($theme-primary, 0.8)
+
+  .modal-body
+    background-color: white
 
     h2
       margin-bottom: 15px
@@ -724,14 +730,11 @@ ul.social-buttons
     right: 25px
     cursor: pointer
 
-    &:hover
-      opacity: 0.3
-
     .lr
       height: 75px
       width: 1px
       margin-left: 35px
-      background-color: $gray-darker
+      background-color: white
       transform: rotate(45deg)
       -ms-transform: rotate(45deg)
 
@@ -744,7 +747,7 @@ ul.social-buttons
       .rl
         height: 75px
         width: 1px
-        background-color: $gray-darker
+        background-color: white
         transform: rotate(90deg)
         -ms-transform: rotate(90deg)
 
@@ -753,6 +756,12 @@ ul.social-buttons
 
         /* Safari and Chrome
         z-index: 1052
+
+    &:hover
+      transform: scale(0.85)
+      .lr,
+      .rl
+        width: 2px
 
   .modal-backdrop
     opacity: 0

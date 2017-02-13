@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 1.5em; } }
 
 header {
-  background-image: url("../img/computer-desk-o70.jpg");
+  background-image: url("../img/office-table-o40.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -302,7 +302,7 @@ section {
     font-weight: 400;
     margin-bottom: 40px; }
 
-#services .fa-stack:hover, #services .fa-stack:active {
+.one-service:hover .fa-stack, .one-service:active .fa-stack {
   transition: all 1s ease-in-out;
   transform: rotateY(360deg); }
 
@@ -624,21 +624,25 @@ ul.social-buttons {
   border: none;
   min-height: 100%;
   padding: 100px 0;
-  text-align: center; }
-  .portfolio-modal .modal-content h2 {
+  text-align: center;
+  background-color: rgba(54, 194, 242, 0.8); }
+
+.portfolio-modal .modal-body {
+  background-color: white; }
+  .portfolio-modal .modal-body h2 {
     margin-bottom: 15px;
     font-size: 3em; }
-  .portfolio-modal .modal-content p {
+  .portfolio-modal .modal-body p {
     margin-bottom: 30px; }
-  .portfolio-modal .modal-content p.item-intro {
+  .portfolio-modal .modal-body p.item-intro {
     margin: 20px 0 30px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 16px; }
-  .portfolio-modal .modal-content ul.list-inline {
+  .portfolio-modal .modal-body ul.list-inline {
     margin-bottom: 30px;
     margin-top: 0; }
-  .portfolio-modal .modal-content img {
+  .portfolio-modal .modal-body img {
     margin-bottom: 30px; }
 
 .portfolio-modal .close-modal {
@@ -649,13 +653,11 @@ ul.social-buttons {
   top: 25px;
   right: 25px;
   cursor: pointer; }
-  .portfolio-modal .close-modal:hover {
-    opacity: 0.3; }
   .portfolio-modal .close-modal .lr {
     height: 75px;
     width: 1px;
     margin-left: 35px;
-    background-color: #222222;
+    background-color: white;
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     /* IE 9 */
@@ -665,13 +667,18 @@ ul.social-buttons {
     .portfolio-modal .close-modal .lr .rl {
       height: 75px;
       width: 1px;
-      background-color: #222222;
+      background-color: white;
       transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       /* IE 9 */
       -webkit-transform: rotate(90deg);
       /* Safari and Chrome */
       z-index: 1052; }
+  .portfolio-modal .close-modal:hover {
+    transform: scale(0.85); }
+    .portfolio-modal .close-modal:hover .lr,
+    .portfolio-modal .close-modal:hover .rl {
+      width: 2px; }
 
 .portfolio-modal .modal-backdrop {
   opacity: 0;
