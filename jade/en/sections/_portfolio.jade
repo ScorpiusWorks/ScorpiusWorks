@@ -1,0 +1,17 @@
+section#portfolio.bg-light-gray
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading Portfolio
+        h3.section-subheading.text-muted We invite you to see below some of the projects we've been involved in:
+    .row
+      +portfolio ('#portfolioModal1', '/img/portfolio/flyer-arena-preview.jpg', 'Arena Gym Flyer', 'Graphic Design')
+      +portfolio ('#portfolioModal2', '/img/portfolio/web-bgdevelopment-preview.jpg', 'BG Development', 'Web Design')
+      .clearfix.visible-sm
+      +portfolio ('#portfolioModal3', '/img/portfolio/flyer-medieval-preview.jpg', 'Medieval Langoș Flyer', 'Graphic Design')
+      +portfolio ('#portfolioModal4', '/img/portfolio/web-maduro-preview.jpg', 'Maduro Cigars Club', 'Web Design')
+      +portfolio ('#portfolioModal5', '/img/portfolio/poster-medieval-preview.jpg', 'Product poster - Medieval', 'Graphic Design')
+      +portfolio ('#portfolioModal6', '/img/portfolio/cdv-scorpius-preview.jpg', 'Business cards', 'Graphic Design')
+    .row
+      .col-12-lg.text-center
+        a.page-scroll.btn.btn-xl(href='#contact') ASK FOR AN OFFER!

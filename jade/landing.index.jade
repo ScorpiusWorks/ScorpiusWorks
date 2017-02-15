@@ -1,0 +1,35 @@
+//output: ../index.html
+
+include includes/_mixins.jade
+
+doctype html
+html
+  // Head
+  include includes/_head.jade
+  body
+    // Landing Page
+    header.home-lang
+      .container
+        .row
+          .big-logo
+            img(src='img/Logo-scorpius-cyan-full-01.svg')
+          h4 Scorpius Works
+          p Delivering perfection.
+        .row
+          .col-sm-4.col-sm-push-2.col-xs-6.col-xs-push-3.text-center
+            a(href="en/index.html")
+              .lang-box.overlay
+                h1 Start in
+                h2 English
+                .separator
+                h3 Let's go!
+          .clearfix.visible-xs
+          .col-sm-4.col-sm-push-2.col-xs-6.col-xs-push-3.text-center
+            a(href="ro/index.html")
+              .lang-box.overlay
+                h1 Începe în
+                h2 Română
+                .separator
+                h3 Haide!
+    // Footer Section
+    include en/sections/_footer.jade

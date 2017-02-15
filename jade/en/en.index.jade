@@ -1,0 +1,31 @@
+//output: ../../en/index.html
+
+include ../includes/_mixins.jade
+
+doctype html 
+html(lang='en')
+  // Head
+  include ../includes/_head.jade
+  body#page-top.index
+    // Navigation
+    include sections/_nav.jade
+    // Header
+    include sections/_header.jade
+    // Services Section
+    include sections/_services.jade
+    // Portfolio Grid Section
+    include sections/_portfolio.jade
+    // About Section
+    include sections/_about.jade
+    // Team Section
+    include sections/_team.jade
+    // Clients Aside
+    include sections/_partners.jade
+    // Contact Section
+    include sections/_contact.jade
+    // Footer Section
+    include sections/_footer.jade
+    // Portfolio Modals
+    include sections/_modals.jade
+    // import scripts
+    include ../includes/_scripts.jade

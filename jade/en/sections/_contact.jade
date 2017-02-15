@@ -1,0 +1,52 @@
+section#contact
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading Contact us!
+        h3.section-subheading.text-muted(style='color:white;') And let's find the best solutions for your business
+    .row
+      .col-lg-12
+        form#contactForm(name='sentMessage', novalidate='')
+          .row
+            .col-md-6
+              .form-group
+                input#name.form-control(
+                  type='text'
+                  placeholder='Your name *'
+                  required=''
+                  data-validation-required-message='Please fill in your name.'
+                )
+                p.help-block.text-danger
+              .form-group
+                input#email.form-control(
+                  type='email'
+                  placeholder='E-mail *'
+                  required=''
+                  data-validation-required-message='Please eneter a valid e-mail address.'
+                )
+                p.help-block.text-danger
+              .form-group
+                input#phone.form-control(
+                  type='tel'
+                  placeholder='Phone *'
+                  required=''
+                  data-validation-required-message='Please enter a valid phone number.'
+                )
+                p.help-block.text-danger
+            .col-md-6
+              .form-group
+                textarea#message.form-control(
+                  placeholder='Measjul tău *'
+                  required=''
+                  data-validation-required-message='Please write a message.'
+                )
+                p.help-block.text-danger
+            //
+              <div class="clearfix"></div>
+              <div class="col-sm-4 col-md-offset-4 g-recaptcha" data-sitekey="6LeauwcUAAAAALryjXRQ-JTw0NiNtgd-n2w_lrNa">
+              </div>
+          .clearfix(style='margin:10px')
+          .row
+            .col-lg-12.text-center
+              #success
+              button.btn.btn-xl(type='submit') Send

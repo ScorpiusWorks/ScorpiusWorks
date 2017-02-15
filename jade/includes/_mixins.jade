@@ -33,7 +33,7 @@ mixin serviciu(icon, title, desc1, desc2)
     p.text-muted #{desc1}
     p.text-muted #{desc2}
     
-mixin modal(nr, title, shdesc, imgsrc, clienturl, client, desc, cta, date, categ)
+mixin modal(nr, title, shdesc, imgsrc, clienturl, clientname, desc, cta, contact, date, currdate, cat, categ, close)
   div(id='portfolioModal' +nr , class= 'portfolio-modal modal fade', tabindex='-1', role='dialog', aria-hidden='true')
     .modal-content
       .close-modal(data-dismiss='modal')
@@ -49,26 +49,26 @@ mixin modal(nr, title, shdesc, imgsrc, clienturl, client, desc, cta, date, categ
               img.img-responsive.img-centered(src=imgsrc, alt=title)
               p
                 a(href=clienturl, target='_blank')
-                  strong #{client}
+                  strong #{clientname}
                 |  #{desc}
               p
                 strong #{cta}
                 br
                 a(href='http://scorpiusworks.com/#contact', target='_blank')
-                  strong Contactează-ne acum!
+                  strong #{contact}
               ul.list-inline
                 li
-                  strong Data:
-                  |  #{date}
+                  strong #{date}
+                  |  #{currdate}
                 li
-                  strong Client:
-                  |  #{client}
+                  strong Client: 
+                  |  #{clientname}
                 li
-                  strong Categorie:
+                  strong #{cat}
                   |  #{categ}
               button.btn.btn-primary(type='button', data-dismiss='modal')
                 i.fa.fa-times
-                |  Închide
+                |  #{close}
 
 mixin time(imgsrc, year, title, desc)
   .timeline-image

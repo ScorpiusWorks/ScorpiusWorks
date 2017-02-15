@@ -1,0 +1,25 @@
+nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+  .container
+    // Brand and toggle get grouped for better mobile display
+    .navbar-header.page-scroll
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+        span.sr-only Nav toggle
+        | Meniu 
+        i.fa.fa-bars
+      a#logo-scorpius.navbar-left.page-scroll(href='#page-top')
+        div
+          img(src='/img/Logo-scorpius-cyan-full-01.svg', alt='Logo Scorpius Works', type='image/svg')
+      a.navbar-brand.page-scroll(href='#page-top') Scorpius Works
+    // Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li.hidden
+          a(href='#page-top')
+        +nav-menu ('#services', 'Servicii')
+        +nav-menu ('#portfolio', 'Portofoliu')
+        +nav-menu ('#about', 'Trivia')
+        +nav-menu ('#team', 'Echipa')
+        +nav-menu ('#partners', 'Parteneri')
+        +nav-menu ('#contact', 'Contact')
+    // /.navbar-collapse
+  // /.container-fluid

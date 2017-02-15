@@ -789,3 +789,122 @@ body
 #parte-din-echipa
   color: white
   text-decoration-color: white
+
+
+// HOMEPAGE language selection
+.home-lang
+  background-color: $gray-darker
+  background-image: url("../img/map-image.png")
+  background-position: center center
+  background-repeat: no-repeat
+
+  .big-logo
+    margin: 0 auto
+    width: 35%
+    max-width: 350px
+    min-width: 250px
+    padding: 25px 25px 0px 25px
+
+    img
+      width: 100%
+
+  a
+    text-decoration: none
+    color: white
+
+  .separator
+    position: absolute
+    left: 50%
+    margin-left: -7.5%
+    margin-top: -15px
+    background-color: white
+    width: 15%
+    height: 3px
+
+  .lang-box
+    margin: 10px
+    padding: 10px 0px 10px 0px
+    background-image: url("../img/office-table-o40.jpg")
+    background-size: cover
+    background-position: center center
+    border: 20px solid rgba(white, 0.7)
+    // transform: translate(-10px, 0px)
+    position: relative
+
+  .overlay
+    position: relative
+
+    &:before
+      position: absolute
+      content: " "
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      display: none
+      z-index: 0
+
+    &:hover:before
+      display: block
+      background-color: rgba($theme-primary, 0.5)
+
+  h1,
+  h2,
+  h3
+    white-space: nowrap
+    width: 100%
+
+  h1
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-style: italic
+    font-size: 18px
+    line-height: 18px
+    margin-bottom: 5px
+    text-transform: none
+    font-weight: 400
+
+  h2
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 40px
+    line-height: 50px
+    margin-bottom: 25px
+    margin-top: 0px
+
+  h3
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 18px
+
+  h4
+    margin: 0
+    color: $theme-primary
+
+  p
+    margin-bottom: 20px
+    color: $theme-primary
+
+@media (max-width:1000px)
+  .home-lang
+    h2
+      font-size: 27px
+      line-height: 27px
+
+@media (max-width:768px)
+  .home-lang
+    h1
+      font-size: 13px
+      line-height: 13px
+      margin-bottom: 5px
+    h2
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 15px
+      margin-top: 0px
+    h3
+      font-size: 12px
+
+    .separator
+      margin-top: -7px
