@@ -21,5 +21,14 @@ nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
         +nav-menu ('#team', 'Echipa')
         +nav-menu ('#partners', 'Parteneri')
         +nav-menu ('#contact', 'Contact')
+        li.dropdown
+          a.dropdown-toggle(data-toggle='dropdown' href='#')
+            span.caret
+            i.fa.fa-globe
+          ul.dropdown-menu.lang-sel
+            li
+              a(href='https://scorpiusworks.com/index.html') English
+            li
+              a(href='https://scorpiusworks.com/ro/index.html') Română
     // /.navbar-collapse
   // /.container-fluid

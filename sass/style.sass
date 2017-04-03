@@ -110,8 +110,7 @@ h1, h2, h3, h4, h5, h6
 
     &:hover,
     &:focus,
-    &:active,
-    &.active
+    &:active
       color: darken($theme-primary, 10%)
 
   .navbar-collapse
@@ -154,6 +153,33 @@ h1, h2, h3, h4, h5, h6
     color: white
     background-color: darken($theme-primary, 10%)
 
+  .dropdown-menu
+    background-color: transparent
+    min-width: 100%
+    box-shadow: none
+    border: 0px
+    padding: 5px
+
+  .dropdown > .dropdown-toggle
+    color: white !important
+    background-color: transparent !important
+    &:hover
+      color: $theme-primary !important
+
+  .caret
+    margin-right: 5px
+
+  .lang-sel li a
+    color: white !important
+    text-align: center
+    padding: 3px 0px
+    &:hover
+      color: $theme-primary !important
+      background-color: transparent
+
+.navbar-fixed-top .navbar-collapse
+  max-height: none
+
 @media (min-width: 1000px)
   .navbar-custom
     background-color: transparent
@@ -166,7 +192,6 @@ h1, h2, h3, h4, h5, h6
     #logo-scorpius
       margin-right: 20px
       margin-top: -3px
-
       &:hover
         transition: all 1s ease-in-out
         transform: scale(1.2) rotateZ(360deg)
@@ -187,6 +212,12 @@ h1, h2, h3, h4, h5, h6
   .navbar-custom.affix
     background-color: $gray-darker
     padding: 10px 0
+
+    .dropdown-menu
+      background-color: $gray-darker
+
+    .lang-sel li a
+      text-align: right
 
     .navbar-brand
       font-size: 1.5em
@@ -797,6 +828,7 @@ body
   background-image: url("../img/map-image.png")
   background-position: center center
   background-repeat: no-repeat
+  min-height: 100%
 
   .big-logo
     margin: 0 auto
@@ -883,7 +915,7 @@ body
     color: $theme-primary
 
   p
-    margin-bottom: 20px
+    padding-bottom: 20px
     color: $theme-primary
 
 @media (max-width:1000px)
@@ -895,16 +927,30 @@ body
 @media (max-width:768px)
   .home-lang
     h1
-      font-size: 13px
-      line-height: 13px
+      font-size: 10px
+      line-height: 10px
       margin-bottom: 5px
     h2
-      font-size: 20px
-      line-height: 25px
-      margin-bottom: 15px
+      font-size: 15px
+      line-height: 15px
+      margin-bottom: 20px
       margin-top: 0px
     h3
-      font-size: 12px
+      font-size: 10px
+
+    p
+      padding-bottom: 40px
 
     .separator
-      margin-top: -7px
+      margin-top: -12px
+
+    .lang-box
+      margin: 0
+
+    .big-logo
+      padding: 3% 0 0 0
+
+@media (max-width:500px)
+  .home-lang
+    .big-logo
+      padding: 10% 0 0 0
