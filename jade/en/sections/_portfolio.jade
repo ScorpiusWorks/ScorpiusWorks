@@ -5,13 +5,21 @@ section#portfolio.bg-light-gray
         h2.section-heading Portfolio
         h3.section-subheading.text-muted We invite you to see below some of the projects we've been involved in:
     .row
-      +portfolio ('#portfolioModal1', '/img/portfolio/flyer-arena-preview.jpg', 'Arena Gym Flyer', 'Graphic Design')
-      +portfolio ('#portfolioModal2', '/img/portfolio/web-bgdevelopment-preview.jpg', 'BG Development', 'Web Design')
-      .clearfix.visible-sm
-      +portfolio ('#portfolioModal3', '/img/portfolio/flyer-medieval-preview.jpg', 'Medieval Langoș Flyer', 'Graphic Design')
-      +portfolio ('#portfolioModal4', '/img/portfolio/web-maduro-preview.jpg', 'Maduro Cigars Club', 'Web Design')
-      +portfolio ('#portfolioModal5', '/img/portfolio/poster-medieval-preview.jpg', 'Product poster - Medieval', 'Graphic Design')
-      +portfolio ('#portfolioModal6', '/img/portfolio/cdv-sabtrading-preview.jpg', 'Identity Pack', 'Graphic Design')
+      .col-lg-12.text-center
+        .filter-btns.btn-group-lg
+          button.btn.btn-primary.cat-sel(data-filter='all') All
+          button.btn.btn-primary.cat-sel(data-filter='web-design') Web Design
+          button.btn.btn-primary.cat-sel(data-filter='flyer') Flyer
+          button.btn.btn-primary.cat-sel(data-filter='logo') Logo
+          button.btn.btn-primary.cat-sel(data-filter='social-media') Social Media
+    .row(style="clear: both")
+      +portfolio ('flyer', '#portfolioModal1', '/img/portfolio/flyer-arena-preview.jpg', 'Arena Gym Flyer', 'Graphic Design')
+      +portfolio ('web-design', '#portfolioModal2', '/img/portfolio/web-bgdevelopment-preview.jpg', 'BG Development', 'Web Design')
+      +portfolio ('flyer', '#portfolioModal3', '/img/portfolio/flyer-medieval-preview.jpg', 'Medieval Langoș Flyer', 'Graphic Design')
+      +portfolio ('web-design', '#portfolioModal4', '/img/portfolio/web-maduro-preview.jpg', 'Maduro Cigars Club', 'Web Design')
+      +portfolio ('flyer', '#portfolioModal5', '/img/portfolio/poster-medieval-preview.jpg', 'Product poster - Medieval', 'Graphic Design')
+      +portfolio ('logo', '#portfolioModal6', '/img/portfolio/cdv-sabtrading-preview.jpg', 'Identity Pack', 'Graphic Design')
     .row
       .col-12-lg.text-center
+        a#loadMore.btn.btn-xl(href='#') LOAD MORE
         a.page-scroll.btn.btn-xl(href='#contact') ASK FOR AN OFFER!

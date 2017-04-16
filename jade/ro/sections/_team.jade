@@ -2,8 +2,8 @@ section#team.bg-light-gray
   .container
     .row
       .col-lg-12.text-center
-        h2.section-heading Echipa noastră grozavă :)
-        h3.section-subheading.text-muted Momentan formată dintr-un singur membru permanent și foarte mulți prieteni
+        h2.section-heading Cine face toate astea?
+        h3.section-subheading.text-muted Momentan, Scorpius Works este un one-man-show :)
     .row
       .col-sm-4.col-sm-push-4
         .team-member
@@ -14,7 +14,7 @@ section#team.bg-light-gray
             +social ('https://www.instagram.com/mariuselix/', 'instagram')
             +social ('https://www.facebook.com/mariuselix', 'facebook')
             +social ('https://www.linkedin.com/in/mariuselix', 'linkedin')
-          a.btn.btn-xl(href='/CV-MariusPorcolean.pdf', target='_blank') Vezi CV
+          a.btn.btn-xl(href='/CV-MariusPorcolean.pdf', target='_blank', onClick="ga('send', 'event', 'CV', 'click', 'VeziCV');") Vezi CV
     .row
       .col-md-6.col-md-offset-3.text-center
         p.large.text-muted

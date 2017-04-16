@@ -2,8 +2,8 @@ section#team.bg-light-gray
   .container
     .row
       .col-lg-12.text-center
-        h2.section-heading Our awesome team :)
-        h3.section-subheading.text-muted Formed right now from only one permanent member and a lot of friends
+        h2.section-heading Who does all this?
+        h3.section-subheading.text-muted At the moment, Scorpius Works is a one-man-show :)
     .row
       .col-sm-4.col-sm-push-4
         .team-member
@@ -14,7 +14,7 @@ section#team.bg-light-gray
             +social ('https://www.instagram.com/mariuselix/', 'instagram')
             +social ('https://www.facebook.com/mariuselix', 'facebook')
             +social ('https://www.linkedin.com/in/mariuselix', 'linkedin')
-          a.btn.btn-xl(href='/CV-MariusPorcolean.pdf', target='_blank') See CV
+          a.btn.btn-xl(href='/CV-MariusPorcolean.pdf', target='_blank', onClick="ga('send', 'event', 'CV', 'click', 'SeeCV');") See CV
     .row
       .col-md-6.col-md-offset-3.text-center
         p.large.text-muted

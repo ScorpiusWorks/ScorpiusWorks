@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6
 
   font-weight: 700
 
-.btn-xl
+.btn-xl, .btn-group-lg > .btn
   +button-variant(white, $theme-primary, $theme-primary)
 
   +heading-font
@@ -85,6 +85,14 @@ h1, h2, h3, h4, h5, h6
     transition: all 0.1s ease-in-out
     transform: scale(0.90)
     box-shadow: 0px 10px 15px $gray-dark
+
+.filter-btns
+  margin-bottom: 30px
+
+  .btn
+    padding: 10px 20px
+    margin: 10px
+    font-size: 15px
 
 // Custom Navigation Bar
 
@@ -325,6 +333,9 @@ section
   .portfolio-item
     margin: 0 0 15px
     right: 0
+    position: relative
+    overflow: hidden
+    display: none
 
     .portfolio-link
       display: block
@@ -918,39 +929,43 @@ body
     padding-bottom: 20px
     color: $theme-primary
 
-@media (max-width:1000px)
-  .home-lang
-    h2
-      font-size: 27px
-      line-height: 27px
 
-@media (max-width:768px)
-  .home-lang
-    h1
-      font-size: 10px
-      line-height: 10px
-      margin-bottom: 5px
-    h2
-      font-size: 15px
-      line-height: 15px
-      margin-bottom: 20px
-      margin-top: 0px
-    h3
-      font-size: 10px
 
-    p
-      padding-bottom: 40px
-
-    .separator
-      margin-top: -12px
-
-    .lang-box
-      margin: 0
-
-    .big-logo
-      padding: 3% 0 0 0
-
-@media (max-width:500px)
-  .home-lang
-    .big-logo
-      padding: 10% 0 0 0
+// OBSOLETE STUFF FROM HOMEPAGE LANG SEL
+//
+// @media (max-width:1000px)
+//   .home-lang
+//     h2
+//       font-size: 27px
+//       line-height: 27px
+//
+// @media (max-width:768px)
+//   .home-lang
+//     h1
+//       font-size: 10px
+//       line-height: 10px
+//       margin-bottom: 5px
+//     h2
+//       font-size: 15px
+//       line-height: 15px
+//       margin-bottom: 20px
+//       margin-top: 0px
+//     h3
+//       font-size: 10px
+//
+//     p
+//       padding-bottom: 40px
+//
+//     .separator
+//       margin-top: -12px
+//
+//     .lang-box
+//       margin: 0
+//
+//     .big-logo
+//       padding: 3% 0 0 0
+//
+// @media (max-width:500px)
+//   .home-lang
+//     .big-logo
+//       padding: 10% 0 0 0

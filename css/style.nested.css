@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #36c2f2;
     background-color: white; }
 
-.btn-xl {
+.btn-xl, .btn-group-lg > .btn {
   color: white;
   background-color: #36c2f2;
   border-color: #36c2f2;
@@ -114,47 +114,62 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 40px;
   box-shadow: 0px 5px 10px #777777;
   margin: 20px; }
-  .btn-xl:focus, .btn-xl.focus {
+  .btn-xl:focus, .btn-xl.focus, .btn-group-lg > .btn:focus, .btn-group-lg > .btn.focus {
     color: white;
     background-color: #0fafe6;
     border-color: #0a789e; }
-  .btn-xl:hover {
+  .btn-xl:hover, .btn-group-lg > .btn:hover {
     color: white;
     background-color: #0fafe6;
     border-color: #0ea8dd; }
   .btn-xl:active, .btn-xl.active,
-  .open > .btn-xl.dropdown-toggle {
+  .open > .btn-xl.dropdown-toggle, .btn-group-lg > .btn:active, .btn-group-lg > .btn.active,
+  .open > .btn-group-lg > .btn.dropdown-toggle {
     color: white;
     background-color: #0fafe6;
     border-color: #0ea8dd; }
     .btn-xl:active:hover, .btn-xl:active:focus, .btn-xl:active.focus, .btn-xl.active:hover, .btn-xl.active:focus, .btn-xl.active.focus,
     .open > .btn-xl.dropdown-toggle:hover,
     .open > .btn-xl.dropdown-toggle:focus,
-    .open > .btn-xl.dropdown-toggle.focus {
+    .open > .btn-xl.dropdown-toggle.focus, .btn-group-lg > .btn:active:hover, .btn-group-lg > .btn:active:focus, .btn-group-lg > .btn:active.focus, .btn-group-lg > .btn.active:hover, .btn-group-lg > .btn.active:focus, .btn-group-lg > .btn.active.focus,
+    .open > .btn-group-lg > .btn.dropdown-toggle:hover,
+    .open > .btn-group-lg > .btn.dropdown-toggle:focus,
+    .open > .btn-group-lg > .btn.dropdown-toggle.focus {
       color: white;
       background-color: #0d96c5;
       border-color: #0a789e; }
   .btn-xl:active, .btn-xl.active,
-  .open > .btn-xl.dropdown-toggle {
+  .open > .btn-xl.dropdown-toggle, .btn-group-lg > .btn:active, .btn-group-lg > .btn.active,
+  .open > .btn-group-lg > .btn.dropdown-toggle {
     background-image: none; }
   .btn-xl.disabled:hover, .btn-xl.disabled:focus, .btn-xl.disabled.focus, .btn-xl[disabled]:hover, .btn-xl[disabled]:focus, .btn-xl[disabled].focus,
   fieldset[disabled] .btn-xl:hover,
   fieldset[disabled] .btn-xl:focus,
-  fieldset[disabled] .btn-xl.focus {
+  fieldset[disabled] .btn-xl.focus, .btn-group-lg > .btn.disabled:hover, .btn-group-lg > .btn.disabled:focus, .btn-group-lg > .btn.disabled.focus, .btn-group-lg > .btn[disabled]:hover, .btn-group-lg > .btn[disabled]:focus, .btn-group-lg > .btn[disabled].focus,
+  fieldset[disabled] .btn-group-lg > .btn:hover,
+  fieldset[disabled] .btn-group-lg > .btn:focus,
+  fieldset[disabled] .btn-group-lg > .btn.focus {
     background-color: #36c2f2;
     border-color: #36c2f2; }
-  .btn-xl .badge {
+  .btn-xl .badge, .btn-group-lg > .btn .badge {
     color: #36c2f2;
     background-color: white; }
-  .btn-xl:hover {
+  .btn-xl:hover, .btn-group-lg > .btn:hover {
     transition: all 0.3s ease-in-out;
     transform: scale(0.95);
     background-color: #0fafe6;
     box-shadow: 0px 8px 15px #555555; }
-  .btn-xl:active {
+  .btn-xl:active, .btn-group-lg > .btn:active {
     transition: all 0.1s ease-in-out;
     transform: scale(0.9);
     box-shadow: 0px 10px 15px #333333; }
+
+.filter-btns {
+  margin-bottom: 30px; }
+  .filter-btns .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 15px; }
 
 .navbar-custom {
   background-color: #222222;
@@ -339,7 +354,10 @@ section {
 
 #portfolio .portfolio-item {
   margin: 0 0 15px;
-  right: 0; }
+  right: 0;
+  position: relative;
+  overflow: hidden;
+  display: none; }
   #portfolio .portfolio-item .portfolio-link {
     display: block;
     position: relative;
@@ -811,33 +829,3 @@ body {
   .home-lang p {
     padding-bottom: 20px;
     color: #36c2f2; }
-
-@media (max-width: 1000px) {
-  .home-lang h2 {
-    font-size: 27px;
-    line-height: 27px; } }
-
-@media (max-width: 768px) {
-  .home-lang h1 {
-    font-size: 10px;
-    line-height: 10px;
-    margin-bottom: 5px; }
-  .home-lang h2 {
-    font-size: 15px;
-    line-height: 15px;
-    margin-bottom: 20px;
-    margin-top: 0px; }
-  .home-lang h3 {
-    font-size: 10px; }
-  .home-lang p {
-    padding-bottom: 40px; }
-  .home-lang .separator {
-    margin-top: -12px; }
-  .home-lang .lang-box {
-    margin: 0; }
-  .home-lang .big-logo {
-    padding: 3% 0 0 0; } }
-
-@media (max-width: 500px) {
-  .home-lang .big-logo {
-    padding: 10% 0 0 0; } }

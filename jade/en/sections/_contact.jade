@@ -2,7 +2,7 @@ section#contact
   .container
     .row
       .col-lg-12.text-center
-        h2.section-heading Contact us!
+        h2.section-heading Get in touch!
         h3.section-subheading.text-muted(style='color:white;') And let's find the best solutions for your business
     .row
       .col-lg-12
@@ -49,4 +49,4 @@ section#contact
           .row
             .col-lg-12.text-center
               #success
-              button.btn.btn-xl(type='submit') Send
+              button.btn.btn-xl(type='submit', onClick="ga('send', 'event', 'Contact', 'click', 'Send');") Send

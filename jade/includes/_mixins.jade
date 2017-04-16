@@ -3,8 +3,8 @@ mixin nav-menu (id, name)
   li
     a.page-scroll(href=id) #{name}
     
-mixin portfolio (modlink, imglnk, hdg, desc)
-  .col-md-4.col-sm-6.portfolio-item
+mixin portfolio (category, modlink, imglnk, hdg, desc)
+  .col-md-4.col-sm-6.portfolio-item(class=category)
     a.portfolio-link(href=modlink data-toggle='modal')
       .portfolio-hover
         .portfolio-hover-content

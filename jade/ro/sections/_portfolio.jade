@@ -3,15 +3,23 @@ section#portfolio.bg-light-gray
     .row
       .col-lg-12.text-center
         h2.section-heading Portofoliu
-        h3.section-subheading.text-muted Vă invităm să vedeți mai jos o parte din lucrările în care ne-am implicat:
+        h3.section-subheading.text-muted Vă invităm să vedeți mai jos o parte din proiectele în care ne-am implicat:
     .row
-      +portfolio ('#portfolioModal1', '/img/portfolio/flyer-arena-preview.jpg', 'Flyer Arena Gym', 'Design Grafic')
-      +portfolio ('#portfolioModal2', '/img/portfolio/web-bgdevelopment-preview.jpg', 'BG Development', 'Web Design')
-      .clearfix.visible-sm
-      +portfolio ('#portfolioModal3', '/img/portfolio/flyer-medieval-preview.jpg', 'Flyer Medieval Langos', 'Design Grafic')
-      +portfolio ('#portfolioModal4', '/img/portfolio/web-maduro-preview.jpg', 'Maduro Cigars Club', 'Web Design')
-      +portfolio ('#portfolioModal5', '/img/portfolio/poster-medieval-preview.jpg', 'Poster produs - Medieval', 'Design Grafic')
-      +portfolio ('#portfolioModal6', '/img/portfolio/cdv-sabtrading-preview.jpg', 'Pachet identitate', 'Design Grafic')
+      .col-lg-12.text-center
+        .filter-btns.btn-group-lg
+          button.btn.btn-primary.cat-sel(data-filter='all') Toate
+          button.btn.btn-primary.cat-sel(data-filter='web-design') Web Design
+          button.btn.btn-primary.cat-sel(data-filter='flyer') Flyer
+          button.btn.btn-primary.cat-sel(data-filter='logo') Logo
+          button.btn.btn-primary.cat-sel(data-filter='social-media') Social Media
+    .row(style="clear: both")
+      +portfolio ('flyer', '#portfolioModal1', '/img/portfolio/flyer-arena-preview.jpg', 'Flyer Arena Gym', 'Design Grafic')
+      +portfolio ('web-design', '#portfolioModal2', '/img/portfolio/web-bgdevelopment-preview.jpg', 'BG Development', 'Web Design')
+      +portfolio ('flyer', '#portfolioModal3', '/img/portfolio/flyer-medieval-preview.jpg', 'Flyer Medieval Langos', 'Design Grafic')
+      +portfolio ('web-design', '#portfolioModal4', '/img/portfolio/web-maduro-preview.jpg', 'Maduro Cigars Club', 'Web Design')
+      +portfolio ('flyer', '#portfolioModal5', '/img/portfolio/poster-medieval-preview.jpg', 'Poster produs - Medieval', 'Design Grafic')
+      +portfolio ('logo', '#portfolioModal6', '/img/portfolio/cdv-sabtrading-preview.jpg', 'Pachet identitate', 'Design Grafic')
     .row
       .col-12-lg.text-center
+        a#loadMore.btn.btn-xl(href='#') VEZI MAI MULTE
         a.page-scroll.btn.btn-xl(href='#contact') CERE OFERTĂ!
