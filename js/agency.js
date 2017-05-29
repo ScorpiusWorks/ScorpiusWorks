@@ -30,22 +30,6 @@
         }
     })
 
-    // Portfolio filter
-    $(".cat-sel").click(function(){
-       var value = $(this).attr('data-filter');
-       if(value == "all") {
-           //$('.filter').removeClass('hidden');
-           $('.portfolio-item').show('1000');
-       }
-       else {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-           $(".portfolio-item").not('.'+value).hide('3000');
-           $('.portfolio-item').filter('.'+value).show('3000');
-
-       }
-    });
-
     // Load More button
     $(".portfolio-item").slice(0, 6).show();
     $("#loadMore").on('click', function (e) {
@@ -57,6 +41,37 @@
         $('html,body').animate({
             scrollTop: $(this).offset().top -200
         }, 1000);
+    });
+
+    // Portfolio filter
+    $(".cat-sel").click(function(){
+      var value = $(this).attr('data-filter');
+      if(value == "all") {
+        //$('.filter').removeClass('hidden');
+        $(".portfolio-item").hide(500);
+        $('.portfolio-item').slice(0, 6).show(500);
+        $("#loadMore").fadeIn('slow');
+      }
+      else {
+        //$('.filter[filter-item="'+value+'"]').removeClass('hidden');
+        //$(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+
+        //remove load more button when category is changed
+        $("#loadMore").fadeOut('slow');
+
+        $(".portfolio-item").not('.'+value).hide(500);
+        $('.portfolio-item').filter('.'+value).show(500);
+      }
+    });
+
+    // Add slideDown animation to Bootstrap dropdown when expanding.
+    $('.dropdown').on('show.bs.dropdown', function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+
+    // Add slideUp animation to Bootstrap dropdown when collapsing.
+    $('.dropdown').on('hide.bs.dropdown', function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
 
 })(jQuery); // End of use strict
